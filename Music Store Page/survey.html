@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css"> 
+</head>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./images/reggie.png" class="logo" width="100px" height="100px">  
+            <div class="header-right">
+                <a href="index.html">HOME</a>
+                <a href="cover.html">ABOUT</a>
+                <a href="parallax.html">SPECIFICATIONS</a>
+                <a href="products.html">PRODUCTS</a>
+                <a class="active" href="survey.html">CONNECT</a>
+            </div>
+        </div>
+          
+        <div style="padding-left:20px">
+               
+        </div>
+
+  
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain">
+<!-- If we remove this, everything will move to the left of the page-->
+        <div align="center">
+           
+                <!--Adds a heading to the form-->
+                <h1>Tell Us!</h1>
+				<div align="center" align-content="left" style="width: fit-content;">
+					<p>
+						Enter your name:
+						<!-- Input type text for small texts, specify size -->
+						<input type="text" name="UserName" size=35 maxlength=35 value="">
+						<!--Adds spaces - remove and see what happens -->
+					</p>
+					<p>
+						Enter your place of work:
+						<input type="text" name="Deptt" size=35 maxlength=35 value="">
+					</p>
+					<p>
+					Tell us a little about yourself:
+					<!-- For writing lot of text like descriptions with text wrapping,
+					if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+					<textarea name="Comments" cols=30 rows=4></textarea> 
+					</p>
+					<p>
+					Would you like to sign up for our rewards program? 
+					<!-- Radio buttons help you choose one out of the many values -->
+					<input type="radio" name="exe" value=1> Yes
+					<input type="radio" name="exe" value=2> No
+					</p>
+					<p>
+					How do you like to read about your favorite topics? </br></br>
+					<!--Checkbox lets you select multiple options -->
+						<input type="checkbox" name="Books"> Books 
+						<input type="checkbox" name="Web"> Online resources 
+						<input type="checkbox" name="Phone"> Phone apps 
+						<input type="checkbox" name="Magazines"> Magazines 
+					</p>
+					</br>
+					<!--submits the information entered in the form by the user -->
+					<button type=submit value="Submit form">
+						<a href="mailto:you@yourdmainhere.com"><input type=submit Submit form> </a>
+					</button>
+				</div>
+            </div>
+        </div>
+</form> 
+    </div>
+</body>
+</html>
+<!-- https://www.youtube.com/watch?v=CQZxeoQeo5c 
+youtube video on how to build a nice website with users and content (for music page?)-->
